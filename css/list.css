@@ -1,0 +1,121 @@
+/* 列表页专用样式 */
+/* 秒杀图标 */
+.header .miaosha img{
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    padding-left: 15px;
+    border-left: 2px solid #c81523;
+}
+
+/* nav开始 */
+.nav {
+    overflow: hidden;
+}
+
+.sk_list li {
+    float: left;
+}
+
+.sk_list li a {
+    display: block;
+    padding: 0 28px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con li {
+    float: left;
+    text-align: center;
+
+}
+
+.sk_con li a {
+    padding: 0 23px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sk_con li a:hover {
+    text-decoration: none;
+}
+
+/* sk_container开始 */
+.sk_bd ul {
+    width: 1220px;
+}
+.sk_bd ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 462px;
+    margin-top: 20px;
+    margin-right: 14px;
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #b1191a;
+}
+
+.sk_bd ul li img {
+    width: 288px;
+}
+
+.sk_bd .info {
+    width: 290px;
+    height: 98px;
+    padding: 10px;
+}
+
+.sk_bd .info h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+}
+
+.sk_bd .info .price {
+    margin-top: 16px;
+   font-size: 22px;
+   font-weight: 700;
+}
+
+.sk_bd .info .price span {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+
+.bar {
+    font-size: 14px;
+}
+
+.bar_bar {
+    display: inline-block;
+    width: 132px;
+    height: 14px;
+    border-radius: 7px;
+    border: 1px solid #ed282e
+}
+
+.bar_in {
+    float: left;
+    display: block;
+    width: 80%;
+    height: 100%;
+    background-color: #ed282e;
+    border-radius: 7px 0 0 7px;
+}
+
+.sk_bd .button {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 290px;
+    height: 50px;
+    background-color: #b1191a;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+}

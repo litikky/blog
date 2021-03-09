@@ -1,0 +1,139 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.style_red {
+    color: #c81623;
+}
+/* header */
+.header {
+    height: 82px;
+    border-bottom: 2px solid #c81523;;
+}
+
+.header .logo img {
+    padding-top: 16px;
+}
+
+/* registerarea */
+.registerarea {
+    height: 522px;
+    margin-top: 24px;
+}
+
+.area_hd {
+    height: 42px;
+    background-color: #ececec;
+    border: 1px solid #dddddd;
+    line-height: 42px;
+}
+
+.area_hd h2 {
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.area_hd p {
+    float: right;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.reg_form {
+    width: 600px;
+    margin-top: 50px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-top: 22px;
+}
+
+.reg_form label {
+    display: inline-block;
+    width: 110px;
+    height: 36px;
+    text-align: right;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reg_form input {
+    width: 242px;
+    height: 38px;
+    border: 1px solid #999999;
+}
+
+.reg_form .error {
+    color: #c81523;
+}
+
+.reg_form .error_icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(../images/error_icon.png) no-repeat;
+}
+
+.reg_form .safe {
+    margin: 12px 0 20px 190px;
+}
+
+.reg_form .safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.reg_form .agree {
+    margin-left: 112px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+
+/* 使用属性选择器 */
+.reg_form .agree input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+.reg_form .agree a {
+color: #1ba1e6;
+}
+
+.reg_form .btn a {
+    display: block;
+    width: 202px;
+    height: 36px;
+    background-color: #c81523;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 50px 0 0 140px;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+}
+
+.links ul li {
+    display: inline-block;
+    padding: 15px 0;
+}
+
+.links ul li::after {
+    content: "|";
+    margin: 0 9px;
+}
+
+.links ul li:last-child::after {
+    content: ""!important;
+    margin: 0!important; 
+}
