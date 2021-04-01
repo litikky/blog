@@ -7,13 +7,69 @@
 }
 
 .main .focus {
+    position: relative;
     float: left;
     width: 720px;
     height: 456px;
     margin-left: 10px;
     background-color: pink;
+    overflow: hidden;
 }
 
+.focus .circle {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.focus .circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    border-radius: 5px;
+    border: 1px solid #fff; 
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.main .focus ul {
+    position: absolute;
+    width: 600%;
+}
+
+.main .focus ul img {
+    float: left;
+    width: 720px;
+    
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    z-index: 999;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.arrow-l:hover,
+.arrow-r:hover {
+    text-decoration: none;
+}
 
 
 .main .newsflash {
