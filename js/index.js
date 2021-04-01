@@ -53,9 +53,11 @@ window.addEventListener('load', function() {
     
     // 4. 点击左右按钮，改变图片位置
     var first = imgUl.children[0].cloneNode(true); // 深克隆
+    var flag = true; // 流量阀flag
     imgUl.append(first);
     // 右箭头
     arrowR.addEventListener('click', function() {
+        flag = false;
         if (imgIndex === imgUl.children.length - 1) {
             imgUl.style.left = 0;
             imgIndex = 0;
@@ -63,18 +65,23 @@ window.addEventListener('load', function() {
         imgIndex++;
         circleIndex++;
         changeCircle();
-        animate(imgUl, - focusWidth * imgIndex);
+        animate(imgUl, - focusWidth * imgIndex, function() {
+            flag = true;
+        });
     })
     // 左箭头
     arrowL.addEventListener('click', function() {
         if (imgIndex === 0) {
+            flag = false;
             imgIndex = imgUl.children.length - 1;
             imgUl.style.left = - imgIndex * focusWidth + 'px';
         }
         imgIndex--;
         circleIndex--;
         changeCircle();
-        animate(imgUl, - focusWidth * imgIndex);
+        animate(imgUl, - focusWidth * imgIndex, function() {
+            flag = true;
+        });
     })
 
     // 5. 自动播放，鼠标经过时则停止
