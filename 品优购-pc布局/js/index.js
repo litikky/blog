@@ -1,3 +1,9 @@
+/*
+ * @Description: 
+ * @Author: liyaoyao
+ * @Date: 2021-04-01 22:37:05
+ * @LastEditTime: 2021-04-24 14:03:11
+ */
 window.addEventListener('load', function() {
     var focusBox = document.querySelector('.focus');
     var focusWidth = focusBox.offsetWidth;
