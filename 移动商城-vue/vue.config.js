@@ -1,4 +1,7 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/shopping/'
+    : '/',
   configureWebpack: {
     resolve: {
       alias: {
@@ -9,6 +12,6 @@ module.exports = {
         'views': '@/views',
         'commonjs': '@/commonjs'
       }
-    }
+    },
   }
 }
